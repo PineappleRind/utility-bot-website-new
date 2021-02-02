@@ -1,12 +1,6 @@
 body {
-  margin: 0;
   font-family: "Inter", Arial, sans-serif;
-  background: repeating-linear-gradient(45deg, rgb(45, 45, 75) 0%,rgb(60, 52, 92) 10%,rgb(45, 45, 71) 30%);
-  height: 100vh;
-}
-
-* {
-  transition: .2s;
+  background-image: repeating-linear-gradient(45deg, rgb(45, 45, 75) 0%,rgb(60, 52, 92) 10%,rgb(45, 45, 71) 30%);
 }
 li {
   cursor:pointer;
@@ -15,16 +9,6 @@ li:hover {
   opacity:0.7;
 }
 
-#overlay, #navOverlay {
-  position: fixed;
-  top:0;
-  bottom:0;
-  right:0;
-  left:0;
-  background: black;
-  z-index: 99;
-  opacity: 1;
-}
 
 #navOverlay {
   z-index: 20;
@@ -55,47 +39,17 @@ li:hover {
     margin: 0;
 }
 
-.nav-toggle .nav-toggle-bar,  .nav-toggle .nav-toggle-bar::after,  .nav-toggle .nav-toggle-bar::before {
-  position: absolute;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
-  transition: all 0.5s ease;
-  background: white;
-  content: '';
-  height: 0.4rem;
-  width: 100%;
-  margin:0;
-  padding:0;
+.discord-button {
+  border-radius: 3px;
+  padding: 12px 16px;
 }
 
-.nav-toggle {
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  user-select: none;
-  cursor: pointer;
-  height: 1rem;
-  position: fixed;
-  width: 2.6rem;
-  z-index: 2;
-  padding:0;
+.discord-button.red {
+  color: #fff;
+  background-color: #f04747;
 }
-.nav-toggle .nav-toggle-bar { margin-top: 0; }
 
-.nav-toggle .nav-toggle-bar::after { margin-top: 0.8rem; }
-
-.nav-toggle .nav-toggle-bar::before { margin-top: -0.8rem; }
-.menu-icon:hover {
-  transform: scale(1.05);
-}
-.is-closed {
-  left: 100%;
-}
-.is-open {
-  left: calc(100% - 15rem)
+.discord-button.blue {
+  color: #fff;
+  background-color: #7e72e9;
 }
