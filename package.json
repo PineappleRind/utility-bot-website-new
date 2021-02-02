@@ -1,0 +1,24 @@
+{
+  "name": "utility-bot-website",
+  "version": "1.0.0",
+  "description": "A website for the discord bot utilitybot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/discordutilitybot/utility-bot-website.git"
+  },
+  "author": "Andrew Nijmeh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/discordutilitybot/utility-bot-website/issues"
+  },
+  "homepage": "https://github.com/discordutilitybot/utility-bot-website#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.4",
+    "postcss": "^8.2.4",
+    "tailwindcss": "^2.0.2"
+  }
+}
