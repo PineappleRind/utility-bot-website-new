@@ -36,8 +36,8 @@
             </div>
         </div>
     </nav>
-    <nav class="is-closed transition-all duration-700 ease-in-out fixed top-0 bottom-0 h-screen w-60 bg-white z-10 shadow-xlg" id="mobileNav">
-        <p id="close">&times;</p>
+    <nav class="is-closed transition-all duration-700 fixed top-0 bottom-0 h-screen w-60 bg-white z-30 shadow-xlg" id="mobileNav">
+        <p id="close" class="absolute top-5 right-5 text-4xl cursor-pointer">&times;</p>
     </nav>
     <main id="main">
         <div class="h-screen w-screen flex flex-col justify-center items-center">
@@ -73,6 +73,7 @@
         </div>
     </main>
     <div id="overlay"></div>
+    <div id="navOverlay"></div>
     <script src="js/app.dev.js"></script>
 
     <noscript>Please enable JavaScript</noscript>
