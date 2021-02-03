@@ -1,23 +1,16 @@
 body {
   font-family: "Inter", Arial, sans-serif;
-  background-image: repeating-linear-gradient(45deg, rgb(45, 45, 75) 0%,rgb(60, 52, 92) 10%,rgb(45, 45, 71) 30%);
+  background-color: rgb(47, 49, 54);
 }
 li {
   cursor:pointer;
 }
-li:hover {
+nav:not(#mobileNav) li:hover {
   opacity:0.7;
 }
-
-
-#navOverlay {
-  z-index: 20;
-  display: none;
-  opacity:0;
-}
 .navbar {
-  background-color: rgb(45, 45, 75);
-  box-shadow: 0 10px 170px rgba(255, 255, 255, 0.377);
+  background-color: rgb(47, 49, 54);
+  box-shadow: 0 10px 19px rgba(0, 0, 0, 0.377);
 }
 
 #menuOpen {
@@ -49,7 +42,35 @@ li:hover {
   background-color: #f04747;
 }
 
-.discord-button.blue {
+.blue {
   color: #fff;
   background-color: #7e72e9;
+}
+
+.blue:hover {
+  color: #fff;
+  background-color: #7e72e9ce;
+}
+div.circle {
+  display: flex;
+  flex-direction: row; 
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top:0;
+  z-index: -1;
+}
+circle1 {
+  border-radius: 50%;
+  width:400px;
+  height: 400px;
+  background: rgb(57, 58, 63);
+  animation: scale 5s ease infinite;
+  box-shadow: 0 0 0 100px rgb(49, 51, 56);
+}
+
+@keyframes scale {
+  50% {transform: scale(1.1); box-shadow: 0 0 0px 150px rgb(51, 52, 58);}
 }

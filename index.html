@@ -28,7 +28,7 @@
         }
     </style>
 </head>
-<body class="h-screen w-screen bg-black transition-all duration-400">
+<body class="h-screen w-screen transition-all duration-400">
     <nav>
         </div>
         <div class="fixed top-0 z-20 inset-x-0 flex flex-row items-center justify-between navbar" id="navShade">
@@ -52,8 +52,15 @@
             </div>
         </div>
     </nav>
-    <nav class="is-closed transition-all duration-700 fixed top-0 bottom-0 h-screen w-80 bg-white z-30 shadow-xlg" id="mobileNav">
+    <nav class="is-closed transition-all duration-700 fixed top-0 bottom-0 h-screen w-80 bg-white z-30 shadow-xlg p-4 " id="mobileNav">
         <p id="close" class="absolute top-5 right-5 text-4xl cursor-pointer">&times;</p>
+        <ul class="p-5 text-lg">
+            <li class="p-4 m-2 rounded-full hover:bg-gray-100 w-min">Home</li>
+            <li class="p-4 m-2 rounded-full hover:bg-gray-100 w-min">FAQ</li>
+            <li class="p-4 m-2 rounded-full hover:bg-gray-100 w-min">Commands</li>
+            <li class="p-4 m-2 rounded-full hover:bg-gray-100 w-min">Contact</li>
+            <li class=" m-4 px-5 py-4 discord-button blue w-20 flex flex-col justify-center items-center">Invite</li>
+        </ul>
     </nav>
     <main id="main">
         <div class="h-screen w-screen flex flex-col justify-center items-center">
@@ -89,7 +96,10 @@
         </div>
     </main>
     <div id="overlay" class="bg-black fixed inset-x-0 z-50"></div>
-    <div class="transition-all duration-700 inset-x-0" id="navOverlay"></div>
+    <div class="transition-all duration-700 fixed top-0 bottom-0 right-0 left-0 h-screen z-20 bg-black" style=" display: none; opacity:0;"id="navOverlay"></div>
+    <div class="circle">
+        <circle1></circle1>
+    </div>
     <script src="js/app.dev.js"></script>
 
     <noscript>Please enable JavaScript</noscript>
